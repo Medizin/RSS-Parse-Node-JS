@@ -57,25 +57,3 @@ function collectLinks(value, rssFeed) {
 app.listen(8080, () => {
     console.log("Server has started.")
 });
-
-// app.get('/news/:count', function (req, res) {
-//     (async () => {
-//
-//         let feed   = await parser.parseURL('https://www.057.ua/rss'),
-//             result = [];
-//
-//         for(let i = 0; i <= req.params.count.slice(1) - 1; i++) {
-//             let tempObj = {},
-//                 content = 'content:encoded';
-//
-//             tempObj.title = feed.items[i].title;
-//             tempObj.img = feed.items[i].enclosure.url;
-//             tempObj.content = feed.items[i][content];
-//             tempObj.link = feed.items[i].link;
-//
-//             result.push(tempObj);
-//         }
-//
-//         res.send(result);
-//     })();
-// });

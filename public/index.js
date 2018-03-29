@@ -38,6 +38,5 @@ submit.addEventListener('click', () => {
         })
         .then((data) => {
             render(data);
-            console.log(data);
         })
 });
